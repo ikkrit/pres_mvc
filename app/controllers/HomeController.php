@@ -1,23 +1,14 @@
 <?php
 
-    class HomeController
+    class HomeController extends Controller
     {
         function index()
         {
+            $DB = new Database();
+            $DB->db_connect();
             $this->view("home");
         }
 
-        function view($view)
-        {
-            if(file_exists("../app/views/".$view.".php")) {
-
-                include "../app/views/".$view.".php";
-
-            }  else {
-
-                include "../app/views/404.php";
-            }
-        }
     }
 
 ?>
