@@ -4,6 +4,8 @@
     {
         function index()
         {
+            $data['page_title'] = "About";
+
             $this->view("about");
         }
 

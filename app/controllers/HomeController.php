@@ -4,9 +4,9 @@
     {
         function index()
         {
-            $DB = new Database();
-            $DB->db_connect();
-            $this->view("home");
+            $data['page_title'] = "Home";
+           
+            $this->view("home",$data);
         }
 
     }
