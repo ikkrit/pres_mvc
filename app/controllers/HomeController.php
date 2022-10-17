@@ -6,7 +6,7 @@
         {
             $data['page_title'] = "Home";
            
-            $this->view("home",$data);
+            $this->view("vaya_mvc/index",$data);
         }
 
     }
